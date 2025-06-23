@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Audio Player with Download</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .audio-container {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 30px;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    audio {
+      width: 100%;
+      outline: none;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="audio-container">
+    <h2>Listen to the Audio</h2>
+
+    <audio controls>
+      <source src="test.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+
+    <br>
+    <a class="download-btn" href="test.mp3" download>Download Audio</a>
+  </div>
+
+</body>
+</html>
